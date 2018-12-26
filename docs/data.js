@@ -31,5 +31,27 @@
 		"1aufRjaMtq0": {
 			"title": "Absolute Zero: The Conquest of Cold"
 		}
+	},
+	"flashcards": {
+		"url_case":{
+			"content":"According to <a href=\"https://www.w3.org/TR/WD-html40-970708/htmlweb.html\">W3's \"HTML and URLs\"</a>,  users should always consider that URLs are <b>case-sensitive</b>"
+		},
+		"domain_name_case":{
+			"content":"<a href="\"\">RFC4343</a> states that domain names are <b>case insensitive</b>"
+		}
+	}
+	"katas":{
+		"codekata_pp":{
+			"title":"CodeKata",
+			"url":"http://codekata.pragprog.com/"
+		},
+		"codingdojo":{
+			"title":"Coding Dojo",
+			"url":"http://codingdojo.org/"
+		},
+		"codekata_scms":{
+			"title":"Code Kata",
+			"url":"http://katas.softwarecraftsmanship.org/"
+		}
 	}
 }

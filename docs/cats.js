@@ -1,6 +1,6 @@
 {
-	"names": ["Bella",
-	"Tigger",
+	"names": ["bella",
+	"tigger",
 	"Chloe",
 	"Shadow",
 	"Luna",

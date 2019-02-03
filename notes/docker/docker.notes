@@ -1,0 +1,30 @@
+Docker Swarm For High Availability | Docker Tutorial | DevOps Tutorial | Edureka
+https://www.youtube.com/watch?v=Ceqb53EXANk
+
+TODO : Do it with three virtual machines using vagrant
+
+docker swarm
+docker manager
+load balancing
+auto load balancing
+rolling update with delay
+
+docker swarm init --advertise-addr $address
+docker swarm join --token $token $address:$port
+docker swarm leave
+docker swarm leave --force
+
+docker service ls
+docker service ps $name
+docker service create --name $name -p $port1:$port2 --mode global $imageName
+docker service create --name $name -p $port1:$port2 --replicas $count $imageName
+docker service rm $name
+docker service scale $name=$count
+
+docker node ls
+docker node ps
+docker node rm $id
+
+all applications are exposed in all nodes, whether nodes actually host the application or not
+global modes deploy to all nodes
+scaling count can be greater than node count

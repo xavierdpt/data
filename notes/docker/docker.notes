@@ -3,13 +3,9 @@ https://www.youtube.com/watch?v=Ceqb53EXANk
 
 TODO : Do it with three virtual machines using vagrant
 
-docker swarm
-docker manager
-load balancing
-auto load balancing
-rolling update with delay
-
 docker swarm init --advertise-addr $address
+docker swarm join-token manager
+docker swarm join-token worker
 docker swarm join --token $token $address:$port
 docker swarm leave
 docker swarm leave --force
@@ -25,6 +21,10 @@ docker node ls
 docker node ps
 docker node rm $id
 docker node update --availability drain $nodeName
+docker node promote $node
+docker node demote $node
+docker node update --label-add $name=$value
+
 
 all applications are exposed in all nodes, whether nodes actually host the application or not
 global modes deploy to all nodes

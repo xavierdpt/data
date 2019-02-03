@@ -24,6 +24,7 @@ docker service scale $name=$count
 docker node ls
 docker node ps
 docker node rm $id
+docker node update --availability drain $nodeName
 
 all applications are exposed in all nodes, whether nodes actually host the application or not
 global modes deploy to all nodes
